@@ -41,7 +41,7 @@ def handle(message):
 
     # 🤖 AI только если непонятно
     else:
-        answer = ai_answer(message.text)
+        bot.send_message(user_id, "Бот работает (AI временно отключен)")
         bot.send_message(message.chat.id, answer)
 
 print("Бот запущен")
