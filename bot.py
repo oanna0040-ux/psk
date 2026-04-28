@@ -2,7 +2,7 @@ import telebot
 from openai import OpenAI
 
 TELEGRAM_TOKEN = "8619718901:AAEH7aGHIoXlWAFdXvVBsm9ahxItel2xG-E"
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = "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"
 
 bot = telebot.TeleBot(TELEGRAM_TOKEN)
 client = OpenAI(api_key=OPENAI_API_KEY)
