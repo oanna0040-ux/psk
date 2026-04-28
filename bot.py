@@ -45,4 +45,9 @@ def handle(message):
         bot.send_message(message.chat.id, answer)
 
 print("Бот запущен")
-bot.polling()
+
+try:
+    bot.polling(non_stop=True)
+except Exception as e:
+    print("ОШИБКА:")
+    print(e)
