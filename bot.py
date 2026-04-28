@@ -24,8 +24,10 @@ def ai_answer(text):
     return response.choices[0].message.content
 
 @bot.message_handler(func=lambda message: True)
-def handle(message):
-    text = message.text.lower()
+def handle_message(message):
+    user_id = message.chat.id
+    answer = ai_manager_answer(user_id, message.text)
+    bot.send_message(user_id, answer)
 
     # 💸 БЕЗ AI (бесплатно)
     if "крыша" in text or "течет" in text:
