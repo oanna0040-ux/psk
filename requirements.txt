@@ -1,3 +1,5 @@
 pyTelegramBotAPI
 openai
 flask
+gspread
+google-auth
