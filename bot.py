@@ -85,7 +85,8 @@ def ai_manager_answer(user_id, user_text):
         traceback.print_exc()
         return "Сейчас AI временно недоступен. Мы получили ваше сообщение, специалист свяжется с вами позже."
 
-
+save_dialog_message(...)
+save_lead(...)
 @bot.message_handler(func=lambda message: True)
 def handle_message(message):
     user_id = message.chat.id
