@@ -2,8 +2,8 @@ import os
 import telebot
 from openai import OpenAI
 
-TELEGRAM_TOKEN = os.getenv("8619718901:AAEH7aGHIoXlWAFdXvVBsm9ahxItel2xG-E")
-OPENAI_API_KEY = os.getenv("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")
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 bot = telebot.TeleBot(TELEGRAM_TOKEN)
 client = OpenAI(api_key=OPENAI_API_KEY)
